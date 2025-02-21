@@ -1,0 +1,3 @@
+/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug/CMakeFiles/NSTU_Algoritm.dir
+/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
