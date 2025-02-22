@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug"
+			"value" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ivannz/Programing/NSTU_Algoritm"
+			"value" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug"
+			"value" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-debug"
 		},
 		{
 			"name" : "NSTU_Algoritm_IS_TOP_LEVEL",
@@ -1175,7 +1175,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ivannz/Programing/NSTU_Algoritm"
+			"value" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

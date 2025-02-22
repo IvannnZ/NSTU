@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/ivannz/Downloads/bubuntu/clion-2024.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/ivannz/Programing/NSTU_Algoritm -B/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug
+  command = /home/ivannz/Downloads/bubuntu/clion-2024.2.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/ivannz/Programing/NSTU/NSTU_Algoritm -B/home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

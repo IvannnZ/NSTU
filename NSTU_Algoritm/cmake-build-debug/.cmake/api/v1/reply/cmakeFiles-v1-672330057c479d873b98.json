@@ -778,8 +778,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/ivannz/Programing/NSTU_Algoritm/cmake-build-debug",
-		"source" : "/home/ivannz/Programing/NSTU_Algoritm"
+		"build" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-debug",
+		"source" : "/home/ivannz/Programing/NSTU/NSTU_Algoritm"
 	},
 	"version" : 
 	{
