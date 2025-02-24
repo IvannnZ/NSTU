@@ -26,5 +26,7 @@ while t < 100:
     if len(dot) % 3 == 0:
         x, y = zip(*dot)
         ax.plot(x, y, 'bo-', markersize=1)
+        dot = [(l,L)]
+
     t += dt
     plt.pause(0.01)

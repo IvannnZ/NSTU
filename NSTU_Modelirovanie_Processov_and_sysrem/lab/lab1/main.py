@@ -51,7 +51,7 @@ class Dot:
         return int(self.x * 10 + WIDTH // 2), int(-self.y * 10 + HEIGHT // 2)
 
 
-dot = Dot(1000, 0, 12, 1000000, 2, 2)
+dot = Dot(10000, -40, 12, 1000000, 10, 0)
 
 dot2 = Dot(1000, 0, 12, 1000000, 2, 2)
 
