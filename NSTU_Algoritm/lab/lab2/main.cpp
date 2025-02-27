@@ -1,5 +1,4 @@
 #include <iostream>
-#include <sstream>
 #include <string>
 #include <stack>
 #include <memory>
@@ -17,8 +16,12 @@ struct TreeNode {
 class ExpressionTree {
 public:
     ExpressionTree(const string& expression) {
-        istringstream iss(expression);
-        root = buildTree(iss);
+        size_t pos = 0;
+        root = buildTree(expression, pos);
+    }
+
+    ~ExpressionTree() {
+        clear(root);
     }
 
     void postorder() const {
@@ -43,13 +46,18 @@ private:
         {"/", divides<double>()}
     };
 
-    unique_ptr<TreeNode> buildTree(istringstream& iss) {
-        string token;
-        if (!(iss >> token)) return nullptr;
+    unique_ptr<TreeNode> buildTree(const string& expr, size_t& pos) {
+        while (pos < expr.length() && expr[pos] == ' ') ++pos;
+        if (pos >= expr.length()) return nullptr;
+
+        size_t next_space = expr.find(' ', pos);
+        string token = expr.substr(pos, next_space - pos);
+        pos = (next_space == string::npos) ? expr.length() : next_space + 1;
+
         auto node = make_unique<TreeNode>(token);
         if (operators.count(token)) {
-            node->left = buildTree(iss);
-            node->right = buildTree(iss);
+            node->left = buildTree(expr, pos);
+            node->right = buildTree(expr, pos);
         }
         return node;
     }
@@ -75,6 +83,13 @@ private:
             return operators.at(node->value)(evaluate(node->left.get()), evaluate(node->right.get()));
         }
         return stod(node->value);
+    }
+
+    void clear(unique_ptr<TreeNode>& node) {
+        if (!node) return;
+        node->left.reset();
+        node->right.reset();
+        node.reset();
     }
 };
 
