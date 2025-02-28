@@ -7,48 +7,37 @@
 
 using namespace std;
 
-struct TreeNode
-{
+struct TreeNode {
     string value;
     unique_ptr<TreeNode> left, right;
-
-    TreeNode(string val) : value(move(val)), left(nullptr), right(nullptr)
-    {
-    }
+    TreeNode(string val) : value(move(val)), left(nullptr), right(nullptr) {}
 };
 
-class ExpressionTree
-{
+class ExpressionTree {
 public:
-    ExpressionTree(const string& expression)
-    {
+    ExpressionTree(const string& expression) {
         size_t pos = 0;
         root = buildTree(expression, pos);
     }
 
-    ~ExpressionTree()
-    {
+    ~ExpressionTree() {
         clear(root);
     }
 
-    void postorder() const
-    {
-        postorder(root.get());
+    void inorder() const {
+        inorder(root.get());
         cout << endl;
     }
 
-    bool isExpressionTree() const
-    {
+    bool isExpressionTree() const {
         return validate(root.get());
     }
 
-    double evaluate() const
-    {
+    double evaluate() const {
         return evaluate(root.get());
     }
 
-    size_t size() const
-    {
+    size_t size() const {
         return size(root.get());
     }
 
@@ -61,77 +50,66 @@ private:
         {"/", divides<double>()}
     };
 
-    unique_ptr<TreeNode> buildTree(const string& expr, size_t& pos)
-    {
+    unique_ptr<TreeNode> buildTree(const string& expr, size_t& pos) {
         while (pos < expr.length() && expr[pos] == ' ') ++pos;
         if (pos >= expr.length()) return nullptr;
 
-        const size_t next_space = expr.find(' ', pos);
+        size_t next_space = expr.find(' ', pos);
         string token = expr.substr(pos, next_space - pos);
-        // pos = (next_space == string::npos) ? expr.length() : next_space + 1;
-        pos = next_space + 1;
+        pos = (next_space == string::npos) ? expr.length() : next_space + 1;
 
-        unique_ptr<TreeNode> node = make_unique<TreeNode>(token);
-        if (operators.count(token))
-        {
+        auto node = make_unique<TreeNode>(token);
+        if (operators.count(token)) {
             node->left = buildTree(expr, pos);
             node->right = buildTree(expr, pos);
         }
         return node;
     }
 
-    void postorder(const TreeNode* node) const
-    {
+    void inorder(const TreeNode* node) const {
         if (!node) return;
-        postorder(node->left.get());
-        postorder(node->right.get());
+        if (operators.count(node->value)) cout << "( ";
+        inorder(node->left.get());
         cout << node->value << " ";
+        inorder(node->right.get());
+        if (operators.count(node->value)) cout << ") ";
     }
 
-    bool validate(const TreeNode* node) const
-    {
+    bool validate(const TreeNode* node) const {
         if (!node) return true;
-        if (operators.count(node->value))
-        {
+        if (operators.count(node->value)) {
             return node->left && node->right && validate(node->left.get()) && validate(node->right.get());
         }
         return !node->left && !node->right;
     }
 
-    double evaluate(const TreeNode* node) const
-    {
+    double evaluate(const TreeNode* node) const {
         if (!node) return 0;
-        if (operators.count(node->value))
-        {
+        if (operators.count(node->value)) {
             return operators.at(node->value)(evaluate(node->left.get()), evaluate(node->right.get()));
         }
         return stod(node->value);
     }
 
-    void clear(unique_ptr<TreeNode>& node)
-    {
+    size_t size(const TreeNode* node) const {
+        if (!node) return 0;
+        return 1 + size(node->left.get()) + size(node->right.get());
+    }
+
+    void clear(unique_ptr<TreeNode>& node) {
         if (!node) return;
         node->left.reset();
         node->right.reset();
         node.reset();
     }
-
-    size_t size(const TreeNode* node) const
-    {
-        if (!node) return 0;
-        return 1 + size(node->left.get()) + size(node->right.get());
-    }
 };
 
-int main()
-{
-    ExpressionTree tree("/ + * 5 10 9 - 3 2");
-    tree.postorder();
-    tree.isExpressionTree()
-        ? cout << "\nВыражение является деревом выражений"
-        : cout << "\nВыражение не является деревом выражений";
-    cout << "Значение выражения: " << tree.evaluate() << endl;
+int main() {
+    ExpressionTree tree("- * + 7 3 4 / 10 2");
+    cout << "\nИнфиксная нотация: ";
+    tree.inorder();
+    cout << "Выражение действительно является деревом выражений: " << tree.isExpressionTree() << endl;
+    cout << "Результат вычисления выражения: " << tree.evaluate() << endl;
     cout << "Размер дерева: " << tree.size() << endl;
-
     return 0;
 }

@@ -49,8 +49,8 @@ cmake_ninja_workdir = /home/ivannz/Programing/NSTU/NSTU_Algoritm/cmake-build-deb
 
 build cmake_object_order_depends_target_NSTU_Algoritm: phony || .
 
-build CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o: CXX_COMPILER__NSTU_Algoritm_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Algoritm/lab/lab2/main.cpp || cmake_object_order_depends_target_NSTU_Algoritm
-  DEP_FILE = CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o.d
+build CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main_KSU.cpp.o: CXX_COMPILER__NSTU_Algoritm_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Algoritm/lab/lab2/main_KSU.cpp || cmake_object_order_depends_target_NSTU_Algoritm
+  DEP_FILE = CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main_KSU.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/NSTU_Algoritm.dir
   OBJECT_FILE_DIR = CMakeFiles/NSTU_Algoritm.dir/lab/lab2
@@ -63,7 +63,7 @@ build CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o: CXX_COMPILER__NSTU_Algor
 #############################################
 # Link the executable NSTU_Algoritm
 
-build NSTU_Algoritm: CXX_EXECUTABLE_LINKER__NSTU_Algoritm_Debug CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o
+build NSTU_Algoritm: CXX_EXECUTABLE_LINKER__NSTU_Algoritm_Debug CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main_KSU.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/NSTU_Algoritm.dir
   POST_BUILD = :
