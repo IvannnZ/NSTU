@@ -50,11 +50,12 @@ private:
         while (pos < expr.length() && expr[pos] == ' ') ++pos;
         if (pos >= expr.length()) return nullptr;
 
-        size_t next_space = expr.find(' ', pos);
+        const size_t next_space = expr.find(' ', pos);
         string token = expr.substr(pos, next_space - pos);
-        pos = (next_space == string::npos) ? expr.length() : next_space + 1;
+        // pos = (next_space == string::npos) ? expr.length() : next_space + 1;
+        pos = next_space + 1;
 
-        auto node = make_unique<TreeNode>(token);
+        unique_ptr<TreeNode> node = make_unique<TreeNode>(token);
         if (operators.count(token)) {
             node->left = buildTree(expr, pos);
             node->right = buildTree(expr, pos);
@@ -72,7 +73,7 @@ private:
     bool validate(const TreeNode* node) const {
         if (!node) return true;
         if (operators.count(node->value)) {
-            return node->left && node->right;
+            return node->left && node->right && validate(node->left.get()) && validate(node->right.get());
         }
         return !node->left && !node->right;
     }
