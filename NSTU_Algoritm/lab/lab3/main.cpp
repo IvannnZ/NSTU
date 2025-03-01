@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <optional>
 
 using namespace std;
 
@@ -12,29 +11,79 @@ private:
         bool deleted;
     };
 
-    vector<optional<Entry>> table;
+    Entry** table;
     size_t size;
     size_t capacity;
 
-    int hash(int key) {
+    int hash(int key) const
+    {
         return key % capacity;
     }
 
-    int foldKey(int key) {
+    static int foldKey(int key)
+    {
         return (key / 10000) + (key % 10000);
+    }
+
+    void rehash() {
+        const size_t newCapacity = capacity * 2;
+        Entry** newTable = new Entry*[newCapacity];
+        for (size_t i = 0; i < newCapacity; ++i) {
+            newTable[i] = nullptr;
+        }
+
+        for (size_t i = 0; i < capacity; ++i) {
+            if (table[i] && table[i]->occupied && !table[i]->deleted) {
+                const int newHashedKey = table[i]->key % newCapacity;
+                for (int j = 0; j < newCapacity; ++j) {
+                    int idx = (newHashedKey + j * j) % newCapacity;
+                    if (!newTable[idx]) {
+                        newTable[idx] = new Entry{table[i]->key, true, false};
+                        break;
+                    }
+                }
+            }
+        }
+
+        for (size_t i = 0; i < capacity; ++i) {
+            delete table[i];
+        }
+        delete[] table;
+
+        table = newTable;
+        capacity = newCapacity;
     }
 
 public:
     HashTable(size_t cap) : capacity(cap), size(0) {
-        table.resize(capacity, nullopt);
+        table = new Entry*[capacity];
+        for (size_t i = 0; i < capacity; ++i) {
+            table[i] = nullptr;
+        }
+    }
+
+    ~HashTable() {
+        for (size_t i = 0; i < capacity; ++i) {
+            delete table[i];
+        }
+        delete[] table;
     }
 
     bool insert(int key) {
+        if (size >= capacity * 0.7) {
+            rehash();
+        }
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
             int idx = (hashedKey + i * i) % capacity;
-            if (!table[idx].has_value() || table[idx]->deleted) {
-                table[idx] = {key, true, false};
+            if (!table[idx] || table[idx]->deleted) {
+                if (!table[idx]) {
+                    table[idx] = new Entry{key, true, false};
+                } else {
+                    table[idx]->key = key;
+                    table[idx]->occupied = true;
+                    table[idx]->deleted = false;
+                }
                 ++size;
                 return true;
             }
@@ -46,7 +95,7 @@ public:
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
             int idx = (hashedKey + i * i) % capacity;
-            if (!table[idx].has_value()) return false;
+            if (!table[idx]) return false;
             if (table[idx]->occupied && !table[idx]->deleted && table[idx]->key == key) return true;
         }
         return false;
@@ -56,7 +105,7 @@ public:
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
             int idx = (hashedKey + i * i) % capacity;
-            if (!table[idx].has_value()) return false;
+            if (!table[idx]) return false;
             if (table[idx]->occupied && !table[idx]->deleted && table[idx]->key == key) {
                 table[idx]->deleted = true;
                 --size;
@@ -79,14 +128,16 @@ public:
     }
 
     void clear() {
-        table.clear();
-        table.resize(capacity, nullopt);
+        for (size_t i = 0; i < capacity; ++i) {
+            delete table[i];
+            table[i] = nullptr;
+        }
         size = 0;
     }
 
     void display() const {
         for (size_t i = 0; i < capacity; ++i) {
-            if (table[i].has_value() && !table[i]->deleted) {
+            if (table[i] && !table[i]->deleted) {
                 cout << i << ": " << table[i]->key << endl;
             }
         }
