@@ -25,8 +25,23 @@ private:
         return (key / 10000) + (key % 10000);
     }
 
+    bool isPrime(size_t n) {
+        if (n < 2) return false;
+        for (size_t i = 2; i * i <= n; ++i) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
+
+    size_t nextPrime(size_t n) {
+        while (!isPrime(n)) {
+            ++n;
+        }
+        return n;
+    }
+
     void rehash() {
-        const size_t newCapacity = capacity * 2;
+        size_t newCapacity = nextPrime(capacity * 2);
         Entry** newTable = new Entry*[newCapacity];
         for (size_t i = 0; i < newCapacity; ++i) {
             newTable[i] = nullptr;
@@ -34,7 +49,7 @@ private:
 
         for (size_t i = 0; i < capacity; ++i) {
             if (table[i] && table[i]->occupied && !table[i]->deleted) {
-                const int newHashedKey = table[i]->key % newCapacity;
+                int newHashedKey = table[i]->key % newCapacity;
                 for (int j = 0; j < newCapacity; ++j) {
                     int idx = (newHashedKey + j * j) % newCapacity;
                     if (!newTable[idx]) {
@@ -55,15 +70,14 @@ private:
     }
 
 public:
-    HashTable(size_t cap) : capacity(cap), size(0) {
+    HashTable(size_t cap) : capacity(nextPrime(cap)), size(0) {
         table = new Entry*[capacity];
         for (size_t i = 0; i < capacity; ++i) {
             table[i] = nullptr;
         }
     }
 
-
-    HashTable() : capacity(10), size(0) {
+    HashTable() : capacity(nextPrime(10)), size(0) {
         table = new Entry*[capacity];
         for (size_t i = 0; i < capacity; ++i) {
             table[i] = nullptr;
@@ -189,6 +203,3 @@ int main() {
     cout << endl;
     return 0;
 }
-
-
-// спросить про capacity, должно ли оно быть простым
