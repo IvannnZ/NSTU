@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 add_executable(NSTU_Modelirovanie_Processov_and_sysrem
-    lab/lab2/main_.cpp
+    lab/lab3/main.cpp
 )
