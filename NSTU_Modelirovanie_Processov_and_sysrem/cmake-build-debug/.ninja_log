@@ -1,0 +1,10 @@
+# ninja log v6
+239	282	1741447071592041827	NSTU_Modelirovanie_Processov_and_sysrem	ced0fa09352bd2da
+1	239	1741447071354038583	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main.cpp.o	676feb2a7ed9dcbf
+2	36	1741447078850141230	build.ninja	9fcfd26eeda4a171
+1	22	1741447078850141230	build.ninja	9fcfd26eeda4a171
+1	402	1741447078857141327	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
+1	317	1741447100538443793	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
+317	360	1741447100854448260	NSTU_Modelirovanie_Processov_and_sysrem	53c0683c559f3dc6
+1	312	1741447120075723220	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
+312	355	1741447120386727721	NSTU_Modelirovanie_Processov_and_sysrem	53c0683c559f3dc6

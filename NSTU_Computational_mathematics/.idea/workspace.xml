@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="706df891-662a-419f-adeb-6a5defeb8a22" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9cb947213e422502ae68.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-05T12-13-49-0003.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.cmake/api/v1/reply/target-NSTU_Algoritm-Debug-31c995ec0cd8c8b94f63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/NSTU_Algoritm" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/NSTU_Algoritm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Algoritm/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NSTU_Modelirovanie_Processov_and_sysrem/lab/lab3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NSTU_Modelirovanie_Processov_and_sysrem/lab/lab3/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2tzjh7bw1S37A0CzZZZ4F9BVbzv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="706df891-662a-419f-adeb-6a5defeb8a22" name="Changes" comment="" />
+      <created>1741361914113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741361914113</updated>
+    </task>
+    <servers />
+  </component>
+</project>
