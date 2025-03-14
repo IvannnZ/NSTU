@@ -1,19 +1,7 @@
 # ninja log v6
 1	312	1741447120075723220	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
 0	218	1741449047378546138	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main.cpp.o	21ab9f30f7539ed
-1	22	1741488303373767059	build.ninja	9fcfd26eeda4a171
+2	54	1741665801134281095	build.ninja	9fcfd26eeda4a171
 1	239	1741447071354038583	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main.cpp.o	676feb2a7ed9dcbf
-218	257	1741449047596551074	NSTU_Modelirovanie_Processov_and_sysrem	2f6186973267e2e8
-2	54	1741488303373767059	build.ninja	9fcfd26eeda4a171
-1	1041	1741488303387770497	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-1041	1200	1741488304428024888	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-2	996	1741488348528696936	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-996	1157	1741488349522850244	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-2	967	1741488359537305038	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-967	1113	1741488360502436901	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-2	973	1741488371145799246	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-973	1120	1741488372116915436	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-1	963	1741488390252854141	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-963	1112	1741488391212945202	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-3	965	1741488398931637768	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
 966	1121	1741488399894719353	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
+3	965	1741488398931637768	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
