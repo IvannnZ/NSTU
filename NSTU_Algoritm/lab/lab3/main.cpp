@@ -70,6 +70,9 @@ private:
     }
 
 public:
+    void Rehash() {
+      rehash();
+    }
     HashTable(size_t cap) : capacity(nextPrime(cap)), size(0) {
         table = new Entry*[capacity];
         for (size_t i = 0; i < capacity; ++i) {
@@ -91,12 +94,13 @@ public:
         delete[] table;
     }
 
-    bool insert(int key) {
-        if (size >= capacity * 0.7) {
-            rehash();
-        }
+    bool insert(int key, int & count) {
+//      if (size >= capacity) {
+//          rehash();
+//      }
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
+            count ++;
             int idx = (hashedKey + i * i) % capacity;
             if (!table[idx] || table[idx]->deleted) {
                 if (!table[idx]) {
@@ -113,9 +117,11 @@ public:
         return false;
     }
 
-    bool search(int key) {
+    bool search(int key, int& count) {
+
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
+            count ++;
             int idx = (hashedKey + i * i) % capacity;
             if (!table[idx]) return false;
             if (table[idx]->occupied && !table[idx]->deleted && table[idx]->key == key) return true;
@@ -123,9 +129,10 @@ public:
         return false;
     }
 
-    bool remove(int key) {
+    bool remove(int key, int& count) {
         int hashedKey = hash(foldKey(key));
         for (int i = 0; i < capacity; ++i) {
+           count ++;
             int idx = (hashedKey + i * i) % capacity;
             if (!table[idx]) return false;
             if (table[idx]->occupied && !table[idx]->deleted && table[idx]->key == key) {
@@ -169,12 +176,15 @@ public:
 vector<int> findUniqueInFirstNotInSecond(const vector<int>& arr1, const vector<int>& arr2) {
     HashTable hashTable(arr2.size() * 2);
     for (int num : arr2) {
-        hashTable.insert(num);
+      int c;
+        hashTable.insert(num, c);
     }
 
     vector<int> result;
     for (int num : arr1) {
-        if (!hashTable.search(num)) {
+      int c ;
+      if (!hashTable.search(num,c)) {
+
             result.push_back(num);
         }
     }
@@ -182,24 +192,70 @@ vector<int> findUniqueInFirstNotInSecond(const vector<int>& arr1, const vector<i
 }
 
 int main() {
-    HashTable ht(10);
-    ht.insert(100000001);
-    ht.insert(200000002);
-    ht.insert(150000003);
-    ht.display();
-
-    cout << "\nSearching for 200000002: " << (ht.search(200000002) ? "Found" : "Not Found") << endl;
-    ht.remove(200000002);
-    cout << "After deletion: " << (ht.search(200000002) ? "Found" : "Not Found") << endl;
-
-    vector<int> arr1 = {100000001, 200000002, 300000003, 400000004};
-    vector<int> arr2 = {200000002, 400000004};
-
-    vector<int> result = findUniqueInFirstNotInSecond(arr1, arr2);
-    cout << "\nElements in arr1 but not in arr2: ";
-    for (int num : result) {
-        cout << num << " ";
+//    HashTable ht(10);
+//    ht.insert(100000001);
+//    ht.insert(200000002);
+//    ht.insert(150000003);
+//    ht.display();
+//
+//    cout << "\nSearching for 200000002: " << (ht.search(200000002) ? "Found" : "Not Found") << endl;
+//    ht.remove(200000002);
+//    cout << "After deletion: " << (ht.search(200000002) ? "Found" : "Not Found") << endl;
+//
+//    vector<int> arr1 = {100000001, 200000002, 300000003, 400000004};
+//    vector<int> arr2 = {200000002, 400000004};
+//
+//    vector<int> result = findUniqueInFirstNotInSecond(arr1, arr2);
+//    cout << "\nElements in arr1 but not in arr2: ";
+//    for (int num : result) {
+//        cout << num << " ";
+//    }
+//    cout << endl;
+    HashTable hashTable(1000);
+    int count;
+    for (int i = 0; i < 500; ++i){
+      hashTable.insert(i, count);
     }
-    cout << endl;
-    return 0;
+    hashTable.insert(500, count);
+
+    count = 0;
+    hashTable.insert(500, count);
+    cout<<"0.5: Insert:"<< count << " ";
+    count = 0;
+    hashTable.search(500, count);
+    cout<<" Search: " << count << " ";
+    count = 0;
+    hashTable.remove(500, count);
+    cout<<" Remove: " << count << endl;
+
+    for (int i = 500; i < 700; ++i){
+      hashTable.insert(i, count);
+    }
+    hashTable.insert(700, count);
+
+    count = 0;
+    hashTable.insert(700, count);
+    cout<<"0.7: Insert:"<< count << " ";
+    count = 0;
+    hashTable.search(700, count);
+    cout<<" Search: " << count << " ";
+    count = 0;
+    hashTable.remove(700, count);
+    cout<<" Remove: " << count << endl;
+    for (int i = 700; i < 900; ++i){
+      hashTable.insert(i, count);
+    }
+    hashTable.insert(900, count);
+
+    count = 0;
+    hashTable.insert(900, count);
+    cout<<"0.9: Insert:"<< count << " ";
+    count = 0;
+    hashTable.search(900, count);
+    cout<<" Search: " << count << " ";
+    count = 0;
+    hashTable.remove(900, count);
+    cout<<" Remove: " << count << endl;
+
+        return 0;
 }

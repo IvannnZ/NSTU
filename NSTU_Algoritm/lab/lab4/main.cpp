@@ -37,7 +37,6 @@ vector<Attraction> optimalRouteDP(const vector<Attraction>& attractions, double 
             j -= static_cast<int>(attractions[i - 1].time * 10);
         }
     }
-    reverse(bestPlan.begin(), bestPlan.end());
 
     return bestPlan;
 }
