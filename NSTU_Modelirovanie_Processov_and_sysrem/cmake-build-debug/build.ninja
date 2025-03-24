@@ -49,11 +49,11 @@ cmake_ninja_workdir = /home/ivannz/Programing/NSTU/NSTU_Modelirovanie_Processov_
 
 build cmake_object_order_depends_target_NSTU_Modelirovanie_Processov_and_sysrem: phony || .
 
-build CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o: CXX_COMPILER__NSTU_Modelirovanie_Processov_and_sysrem_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Modelirovanie_Processov_and_sysrem/lab/lab3/main_form_dispace.cpp || cmake_object_order_depends_target_NSTU_Modelirovanie_Processov_and_sysrem
-  DEP_FILE = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o.d
+build CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5/main_.cpp.o: CXX_COMPILER__NSTU_Modelirovanie_Processov_and_sysrem_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Modelirovanie_Processov_and_sysrem/lab/lab5/main_.cpp || cmake_object_order_depends_target_NSTU_Modelirovanie_Processov_and_sysrem
+  DEP_FILE = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5/main_.cpp.o.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir
-  OBJECT_FILE_DIR = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3
+  OBJECT_FILE_DIR = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_
 #############################################
 # Link the executable NSTU_Modelirovanie_Processov_and_sysrem
 
-build NSTU_Modelirovanie_Processov_and_sysrem: CXX_EXECUTABLE_LINKER__NSTU_Modelirovanie_Processov_and_sysrem_Debug CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o
+build NSTU_Modelirovanie_Processov_and_sysrem: CXX_EXECUTABLE_LINKER__NSTU_Modelirovanie_Processov_and_sysrem_Debug CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5/main_.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir
   POST_BUILD = :

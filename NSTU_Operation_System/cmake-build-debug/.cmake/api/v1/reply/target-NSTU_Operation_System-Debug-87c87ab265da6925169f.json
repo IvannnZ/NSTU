@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "NSTU_Modelirovanie_Processov_and_sysrem"
+			"path" : "NSTU_Operation_System"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
+					"fragment" : " -pthread -g -O0 -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -53,13 +53,13 @@
 			]
 		}
 	],
-	"id" : "NSTU_Modelirovanie_Processov_and_sysrem::@6890427a1f51a3e7e1df",
+	"id" : "NSTU_Operation_System::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-pthread -g -O0",
 				"role" : "flags"
 			},
 			{
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "NSTU_Modelirovanie_Processov_and_sysrem",
-	"nameOnDisk" : "NSTU_Modelirovanie_Processov_and_sysrem",
+	"name" : "NSTU_Operation_System",
+	"nameOnDisk" : "NSTU_Operation_System",
 	"paths" : 
 	{
 		"build" : ".",
@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "lab/lab3/main_form_dispace.cpp",
+			"path" : "lab1/main22.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
