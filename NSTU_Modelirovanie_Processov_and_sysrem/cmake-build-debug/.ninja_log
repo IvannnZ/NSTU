@@ -1,10 +1,11 @@
 # ninja log v6
-3	965	1741488398931637768	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
-966	1121	1741488399894719353	NSTU_Modelirovanie_Processov_and_sysrem	b8b6e2d723342d5e
-1	239	1741447071354038583	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main.cpp.o	676feb2a7ed9dcbf
-2	54	1742609525317964811	build.ninja	9fcfd26eeda4a171
-0	218	1741449047378546138	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main.cpp.o	21ab9f30f7539ed
-1	312	1741447120075723220	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
-2	61	1742609525317964811	build.ninja	9fcfd26eeda4a171
 1	1116	1742609581149058486	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5/main_.cpp.o	7feb76f2017965f0
-1116	1262	1742609582264172257	NSTU_Modelirovanie_Processov_and_sysrem	15192d0df22fb3ad
+1	312	1741447120075723220	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main_.cpp.o	60fa59bb50814178
+3	393	1743054675357818323	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab5/main.cpp.o	77e717c6f75c703e
+0	218	1741449047378546138	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main.cpp.o	21ab9f30f7539ed
+2	30	1743055070703405598	build.ninja	9fcfd26eeda4a171
+1	239	1741447071354038583	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab2/main.cpp.o	676feb2a7ed9dcbf
+393	457	1743054675747809460	NSTU_Modelirovanie_Processov_and_sysrem	1c7f9adca1cdafd4
+3	965	1741488398931637768	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab3/main_form_dispace.cpp.o	36158edee7f61d75
+1	282	1743055071970384886	CMakeFiles/NSTU_Modelirovanie_Processov_and_sysrem.dir/lab/lab7/main_.cpp.o	cbbd7d61530770f5
+282	335	1743055072251380294	NSTU_Modelirovanie_Processov_and_sysrem	1d2560c271657657

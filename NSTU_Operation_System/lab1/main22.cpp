@@ -10,9 +10,10 @@
 std::vector<pid_t> processes;
 
 bool isProcessRunning(pid_t pid) {
-    return (kill(pid, 0) == 0);
+    return (kill(pid, 0) == 0);// если послать kill(pid, 0), тогда система просто скажет работает или нет процесс
 }
-std::string filename = "file.odt";
+
+std::string filename = "file.odt"; // если открывать word, то понадобится чтобы удобнее менять файлы
 
 void startProcess() {
     pid_t pid = fork();
@@ -24,6 +25,8 @@ void startProcess() {
             close(devNull);
         }
         execlp("gnome-calculator", "gnome-calculator", NULL);
+//      execlp("libreoffice", "libreoffice", filename.c_str(), NULL); // что должен запусскать программа
+
         exit(1);
     } else if (pid > 0) {
         processes.push_back(pid);
@@ -33,7 +36,7 @@ void startProcess() {
     }
 }
 
-void cleanupProcesses() {
+void cleanupProcesses() { // чтбы
     waitpid(0, NULL, WNOHANG);
     processes.erase(
         std::remove_if(processes.begin(), processes.end(), [](pid_t pid) {

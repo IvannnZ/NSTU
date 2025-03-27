@@ -1,0 +1,15 @@
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/bin/Debug/net8.0/lab2
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/bin/Debug/net8.0/lab2.deps.json
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/bin/Debug/net8.0/lab2.runtimeconfig.json
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/bin/Debug/net8.0/lab2.dll
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/bin/Debug/net8.0/lab2.pdb
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.GeneratedMSBuildEditorConfig.editorconfig
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.AssemblyInfoInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.AssemblyInfo.cs
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.csproj.CoreCompileInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.sourcelink.json
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.dll
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/refint/lab2.dll
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.pdb
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/lab2.genruntimeconfig.cache
+/home/ivannz/Programing/NSTU/Technologii_program/lab2/lab2/obj/Debug/net8.0/ref/lab2.dll

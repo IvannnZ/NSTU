@@ -1,12 +1,14 @@
 # ninja log v6
-2	506	1742809903559881985	CMakeFiles/NSTU_Operation_System.dir/lab2/main_pthread.cpp.o	f01a3aaac5233004
-2	159	1741954776143051443	CMakeFiles/NSTU_Operation_System.dir/lab1/main.cpp.o	40a4fb126cb26fe6
-1	449	1742015661413504468	CMakeFiles/NSTU_Operation_System.dir/lab1/main1_nano.cpp.o	43ed0d5afdb424ee
-1	17	1742809949661019937	build.ninja	97034d0f9747edd8
-506	590	1742809904063879919	NSTU_Operation_System	afb5eb83e9b9320a
-2	825	1742368955677992429	CMakeFiles/NSTU_Operation_System.dir/lab1/main22.cpp.o	3887a228c22e1c76
-1	263	1742022346278186107	CMakeFiles/NSTU_Operation_System.dir/lab1/prog.cpp.o	a514fed1a31f4a9f
 2	319	1742621316648504686	CMakeFiles/NSTU_Operation_System.dir/lab2/main.cpp.o	aec56c894ccc3fa2
-1	31	1742809949661019937	build.ninja	97034d0f9747edd8
+1	263	1742022346278186107	CMakeFiles/NSTU_Operation_System.dir/lab1/prog.cpp.o	a514fed1a31f4a9f
 0	399	1742809949670020014	CMakeFiles/NSTU_Operation_System.dir/lab1/main22.cpp.o	b0fd5ce2b6ca5a39
 399	455	1742809950069023440	NSTU_Operation_System	4089ec9e8038b12e
+1	31	1742812597195111760	build.ninja	97034d0f9747edd8
+1	449	1742015661413504468	CMakeFiles/NSTU_Operation_System.dir/lab1/main1_nano.cpp.o	43ed0d5afdb424ee
+2	159	1741954776143051443	CMakeFiles/NSTU_Operation_System.dir/lab1/main.cpp.o	40a4fb126cb26fe6
+2	506	1742809903559881985	CMakeFiles/NSTU_Operation_System.dir/lab2/main_pthread.cpp.o	f01a3aaac5233004
+1	26	1742812597195111760	build.ninja	97034d0f9747edd8
+0	398	1742812597203111774	CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o	9c67f0a9b461f215
+398	461	1742812597601112496	NSTU_Operation_System	2fa40a2ec7f4e305
+2	419	1742812619089152464	CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o	9c67f0a9b461f215
+419	479	1742812619506153259	NSTU_Operation_System	2fa40a2ec7f4e305
