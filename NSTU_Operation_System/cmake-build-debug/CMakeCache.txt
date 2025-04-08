@@ -224,6 +224,9 @@ NSTU_Operation_System_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 NSTU_Operation_System_SOURCE_DIR:STATIC=/home/ivannz/Programing/NSTU/NSTU_Operation_System
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
+
 //The directory containing a CMake configuration file for pthreads.
 pthreads_DIR:PATH=pthreads_DIR-NOTFOUND
 

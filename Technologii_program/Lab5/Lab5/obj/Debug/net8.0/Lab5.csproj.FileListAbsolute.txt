@@ -1,0 +1,15 @@
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/bin/Debug/net8.0/Lab5
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/bin/Debug/net8.0/Lab5.deps.json
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/bin/Debug/net8.0/Lab5.runtimeconfig.json
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/bin/Debug/net8.0/Lab5.dll
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/bin/Debug/net8.0/Lab5.pdb
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.GeneratedMSBuildEditorConfig.editorconfig
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.AssemblyInfoInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.AssemblyInfo.cs
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.csproj.CoreCompileInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.sourcelink.json
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.dll
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/refint/Lab5.dll
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.pdb
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/Lab5.genruntimeconfig.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Lab5/Lab5/obj/Debug/net8.0/ref/Lab5.dll

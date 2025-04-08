@@ -17,7 +17,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 # Добавляем исходные файлы проекта
 add_executable(NSTU_Operation_System
-        lab1/test.cpp)
+        RGZ/main5.cpp)
 
 # Линкуем с pthread
 target_link_libraries(NSTU_Operation_System PRIVATE Threads::Threads)

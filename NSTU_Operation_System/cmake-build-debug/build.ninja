@@ -49,11 +49,11 @@ cmake_ninja_workdir = /home/ivannz/Programing/NSTU/NSTU_Operation_System/cmake-b
 
 build cmake_object_order_depends_target_NSTU_Operation_System: phony || .
 
-build CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o: CXX_COMPILER__NSTU_Operation_System_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Operation_System/lab1/test.cpp || cmake_object_order_depends_target_NSTU_Operation_System
-  DEP_FILE = CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o.d
+build CMakeFiles/NSTU_Operation_System.dir/RGZ/main5.cpp.o: CXX_COMPILER__NSTU_Operation_System_unscanned_Debug /home/ivannz/Programing/NSTU/NSTU_Operation_System/RGZ/main5.cpp || cmake_object_order_depends_target_NSTU_Operation_System
+  DEP_FILE = CMakeFiles/NSTU_Operation_System.dir/RGZ/main5.cpp.o.d
   FLAGS = -pthread -g -O0 -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/NSTU_Operation_System.dir
-  OBJECT_FILE_DIR = CMakeFiles/NSTU_Operation_System.dir/lab1
+  OBJECT_FILE_DIR = CMakeFiles/NSTU_Operation_System.dir/RGZ
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o: CXX_COMPILER__NSTU_O
 #############################################
 # Link the executable NSTU_Operation_System
 
-build NSTU_Operation_System: CXX_EXECUTABLE_LINKER__NSTU_Operation_System_Debug CMakeFiles/NSTU_Operation_System.dir/lab1/test.cpp.o
+build NSTU_Operation_System: CXX_EXECUTABLE_LINKER__NSTU_Operation_System_Debug CMakeFiles/NSTU_Operation_System.dir/RGZ/main5.cpp.o
   FLAGS = -pthread -g -O0
   OBJECT_DIR = CMakeFiles/NSTU_Operation_System.dir
   POST_BUILD = :
