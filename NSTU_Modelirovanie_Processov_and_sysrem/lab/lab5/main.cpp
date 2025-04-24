@@ -1,46 +1,72 @@
 #include <iostream>
 #include <vector>
+#include <thread>
+#include <random>
+#include <chrono>
+#include <iostream>
+#include <random>
+#include <utility>
+#include <vector>
+#include <chrono>
+#include <cmath>
+#include <iomanip>
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
-#include <iomanip>
 
 using namespace std;
+using namespace chrono;
 
-int randRange(int min, int max)
+class RandomNormal
 {
-    return min + (rand() % (max - min + 1));
-}
+    random_device rd;
+    mt19937 gen;
+    normal_distribution<> dist;
 
-long long synchronousPipeline(int stages, int elements)
-{
-    vector<int> processingTime(elements, 0);
-    long long totalTime = 0;
-
-    for (int stage = 0; stage < stages; ++stage)
+public:
+    RandomNormal(double mean, double stddev) : gen(rd()), dist(mean, stddev)
     {
-        for (int i = 0; i < elements; ++i)
-        {
-            processingTime[i] += randRange(1, 10);
-        }
     }
 
-    for (int t : processingTime)
+    int operator()() { return max(1, (int)round(dist(gen))); }
+};
+
+// Function for synchronous pipeline
+long long synchronousPipeline(int stages, int elements, RandomNormal& randGen)
+{
+    vector<int> processingTime(elements, 0);
+    vector<int> buffer(stages, 0);
+    long long totalTime = 0;
+
+    for (int i = 0; i < stages; i++)
     {
-        totalTime = max(totalTime, (long long)t);
+        buffer[i] = randGen();
+    }
+
+    for (int i = 0; i < elements; i++)
+
+    {
+        totalTime += *std::max_element(buffer.begin(), buffer.end());
+        for (int i = 0; i < stages; i++)
+        {
+            buffer[i] = randGen();
+        }
     }
     return totalTime;
 }
 
-long long asynchronousPipeline(int stages, int elements)
+long long asynchronousPipeline(int stages, int elements, RandomNormal& randGen)
 {
     vector<int> buffer(stages, 0);
-    vector<int> processing(elements, 0);
     long long time = 0;
     int processed = 0;
-
+    for (int i = 0; i < stages; ++i)
+    {
+        buffer[i] = randGen();
+    }
     while (processed < elements)
     {
+        // Process elements at each stage
         for (int i = stages - 1; i >= 0; --i)
         {
             if (buffer[i] > 0)
@@ -49,26 +75,25 @@ long long asynchronousPipeline(int stages, int elements)
                 if (buffer[i] == 0 && i == stages - 1)
                 {
                     ++processed;
+                    buffer[i] = -1;
                 }
             }
         }
 
-
         for (int i = stages - 1; i > 0; --i)
         {
-            if (buffer[i] == 0 && buffer[i - 1] > 0)
+            if (buffer[i] == -1 && buffer[i - 1] == 0)
             {
-                buffer[i] = buffer[i - 1];
-                buffer[i - 1] = 0;
+                buffer[i] = randGen();
+                buffer[i - 1] = -1;
+                cout<<"buffer[i]"<<endl;
             }
         }
-
-
-        if (processed + buffer[0] < elements)
+        if (processed == 98)
         {
-            buffer[0] = randRange(1, 10);
+            cout <<"processed"<<endl;
         }
-
+        if (buffer[0] == -1){ buffer[0] = randGen(); }
         ++time;
     }
     return time;
@@ -76,25 +101,24 @@ long long asynchronousPipeline(int stages, int elements)
 
 int main()
 {
-    srand(time(0));
-
     int stages = 5;
-    cout << left << setw(10) << "Elements"
+    double mean = 5.0, stddev = 2.0;
+    cout << left << setw(10) << "num"
         << setw(20) << "Synchronous"
         << setw(20) << "Asynchronous"
-        << setw(15) << "Async/Sync" << endl;
-    cout << string(65, '-') << endl;
+        << setw(15) << "Asyn / Syn" << endl;
+    cout << string(100, '-') << endl;
 
+    RandomNormal randGen(mean, stddev);
     for (int elements = 100; elements < 1000; elements += 100)
     {
-        long long syncTime = synchronousPipeline(stages, elements);
-        long long asyncTime = asynchronousPipeline(stages, elements);
+        long long syncTime = synchronousPipeline(stages, elements, randGen);
+        long long asyncTime = asynchronousPipeline(stages, elements, randGen);
 
         cout << left << setw(10) << elements
             << setw(20) << syncTime
             << setw(20) << asyncTime
-            << setw(15) << fixed << setprecision(2)
-            << (double)asyncTime / syncTime << endl;
+            << setw(15) << (double)asyncTime / syncTime << endl;
     }
     return 0;
 }

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "aMVwrVPOfGGUVHj1lfdLCF1WRfrmeCcGb2p/QwexsY4ME92KOazNSTOi3jR2jUCyCLCgbDLihUrDb+grCjk8nQ==",
+  "success": true,
+  "projectFilePath": "/home/ivannz/Programing/NSTU/Technologii_program/Lab7/Lab7/Lab7.csproj",
+  "expectedPackageFiles": [
+    "/home/ivannz/.nuget/packages/csfml/2.5.0/csfml.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/microsoft.win32.systemevents/9.0.4/microsoft.win32.systemevents.9.0.4.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/sfml.audio/2.5.0/sfml.audio.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/sfml.graphics/2.5.0/sfml.graphics.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/sfml.net/2.5.0/sfml.net.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/sfml.system/2.5.0/sfml.system.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/sfml.window/2.5.0/sfml.window.2.5.0.nupkg.sha512",
+    "/home/ivannz/.nuget/packages/system.drawing.common/9.0.4/system.drawing.common.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

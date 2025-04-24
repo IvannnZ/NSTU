@@ -27,6 +27,7 @@ class Program
 
     static double CalculateExpression(string expression)
     {
+        
         expression = Regex.Replace(expression, @"\s+", "");
         
         while (true)
