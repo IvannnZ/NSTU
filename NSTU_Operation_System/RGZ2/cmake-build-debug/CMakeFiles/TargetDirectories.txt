@@ -1,0 +1,3 @@
+/home/ivannz/Programing/NSTU/NSTU_Operation_System/RGZ2/cmake-build-debug/CMakeFiles/RGZ2.dir
+/home/ivannz/Programing/NSTU/NSTU_Operation_System/RGZ2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ivannz/Programing/NSTU/NSTU_Operation_System/RGZ2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

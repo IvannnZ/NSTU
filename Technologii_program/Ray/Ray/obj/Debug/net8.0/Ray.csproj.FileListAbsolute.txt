@@ -1,0 +1,6 @@
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.csproj.AssemblyReference.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.GeneratedMSBuildEditorConfig.editorconfig
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.AssemblyInfoInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.AssemblyInfo.cs
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.csproj.CoreCompileInputs.cache
+/home/ivannz/Programing/NSTU/Technologii_program/Ray/Ray/obj/Debug/net8.0/Ray.sourcelink.json

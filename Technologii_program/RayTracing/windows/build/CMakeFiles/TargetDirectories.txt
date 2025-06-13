@@ -1,0 +1,3 @@
+/home/ivannz/Programing/NSTU/Technologii_program/RayTracing/windows/build/CMakeFiles/RealTimeRayTracing.dir
+/home/ivannz/Programing/NSTU/Technologii_program/RayTracing/windows/build/CMakeFiles/edit_cache.dir
+/home/ivannz/Programing/NSTU/Technologii_program/RayTracing/windows/build/CMakeFiles/rebuild_cache.dir

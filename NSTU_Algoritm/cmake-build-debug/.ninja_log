@@ -1,10 +1,10 @@
 # ninja log v6
 1	1075	1741004899494985177	CMakeFiles/NSTU_Algoritm.dir/lab/lab3/main_KSU.cpp.o	29a8d0faa0bc5a17
-2	1476	1742010664038571526	CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o	7bd7eeec80e151e6
-851	977	1742610314522587603	NSTU_Algoritm	b8bf469dfaf74e65
-4	797	1740193745666036747	CMakeFiles/NSTU_Algoritm.dir/lab/lab1/main.cpp.o	5d5fe494297c730c
+1	915	1748658527565781790	CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main.cpp.o	7bd7eeec80e151e6
+456	535	1748659089000245732	NSTU_Algoritm	c811fc9ada2fb0c1
+1	392	1748657164085303914	CMakeFiles/NSTU_Algoritm.dir/lab/lab1/main.cpp.o	800ee22f4b27a9b3
 2	1235	1740719784020649123	CMakeFiles/NSTU_Algoritm.dir/lab/lab2/main_KSU.cpp.o	eecfd58ecc7dfff1
 0	850	1742610313671597441	CMakeFiles/NSTU_Algoritm.dir/lab/lab4/main_KSU.cpp.o	53529d92188c0733
-2	41	1742610318008546253	build.ninja	893cf5ca456c2fa5
-3	711	1742012555491123664	CMakeFiles/NSTU_Algoritm.dir/lab/lab3/main.cpp.o	6c65c44660239ad8
+2	41	1748659205217015954	build.ninja	893cf5ca456c2fa5
+1	455	1748659088545250789	CMakeFiles/NSTU_Algoritm.dir/lab/lab3/main.cpp.o	6c65c44660239ad8
 1	921	1742610256277979938	CMakeFiles/NSTU_Algoritm.dir/lab/lab4/main.cpp.o	c289d22161509a9b
